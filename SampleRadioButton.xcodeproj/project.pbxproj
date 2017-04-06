@@ -12,6 +12,12 @@
 		8243458F1E951EF600305578 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8243458D1E951EF600305578 /* Main.storyboard */; };
 		824345911E951EF600305578 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 824345901E951EF600305578 /* Assets.xcassets */; };
 		824345941E951EF600305578 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 824345921E951EF600305578 /* LaunchScreen.storyboard */; };
+		8243459D1E95207F00305578 /* RadioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8243459C1E95207F00305578 /* RadioTableViewCell.swift */; };
+		8243459F1E95208B00305578 /* CheckerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8243459E1E95208B00305578 /* CheckerTableViewCell.swift */; };
+		824345A11E95218200305578 /* SampleHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824345A01E95218200305578 /* SampleHeaderTableViewCell.swift */; };
+		829B74DE1E95F1C500456D19 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829B74DD1E95F1C500456D19 /* SecondViewController.swift */; };
+		829B74E01E960C4B00456D19 /* ImageCheckerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829B74DF1E960C4B00456D19 /* ImageCheckerTableViewCell.swift */; };
+		829B74E31E960C7700456D19 /* ImageRadioCheckerTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829B74E21E960C7700456D19 /* ImageRadioCheckerTableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		824345901E951EF600305578 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		824345931E951EF600305578 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		824345951E951EF600305578 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8243459C1E95207F00305578 /* RadioTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioTableViewCell.swift; sourceTree = "<group>"; };
+		8243459E1E95208B00305578 /* CheckerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckerTableViewCell.swift; sourceTree = "<group>"; };
+		824345A01E95218200305578 /* SampleHeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		829B74DD1E95F1C500456D19 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		829B74DF1E960C4B00456D19 /* ImageCheckerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCheckerTableViewCell.swift; sourceTree = "<group>"; };
+		829B74E21E960C7700456D19 /* ImageRadioCheckerTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageRadioCheckerTableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +66,44 @@
 		824345881E951EF600305578 /* SampleRadioButton */ = {
 			isa = PBXGroup;
 			children = (
+				8243459B1E951F9000305578 /* CustomCells */,
 				824345891E951EF600305578 /* AppDelegate.swift */,
 				8243458B1E951EF600305578 /* ViewController.swift */,
 				8243458D1E951EF600305578 /* Main.storyboard */,
 				824345901E951EF600305578 /* Assets.xcassets */,
 				824345921E951EF600305578 /* LaunchScreen.storyboard */,
 				824345951E951EF600305578 /* Info.plist */,
+				829B74DD1E95F1C500456D19 /* SecondViewController.swift */,
 			);
 			path = SampleRadioButton;
+			sourceTree = "<group>";
+		};
+		8243459B1E951F9000305578 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				824345A01E95218200305578 /* SampleHeaderTableViewCell.swift */,
+				829B74E11E960C5100456D19 /* FirstVC */,
+				829B74E41E960C7D00456D19 /* Second VC */,
+			);
+			name = CustomCells;
+			sourceTree = "<group>";
+		};
+		829B74E11E960C5100456D19 /* FirstVC */ = {
+			isa = PBXGroup;
+			children = (
+				8243459C1E95207F00305578 /* RadioTableViewCell.swift */,
+				8243459E1E95208B00305578 /* CheckerTableViewCell.swift */,
+			);
+			name = FirstVC;
+			sourceTree = "<group>";
+		};
+		829B74E41E960C7D00456D19 /* Second VC */ = {
+			isa = PBXGroup;
+			children = (
+				829B74DF1E960C4B00456D19 /* ImageCheckerTableViewCell.swift */,
+				829B74E21E960C7700456D19 /* ImageRadioCheckerTableCell.swift */,
+			);
+			name = "Second VC";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +178,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				829B74DE1E95F1C500456D19 /* SecondViewController.swift in Sources */,
+				8243459D1E95207F00305578 /* RadioTableViewCell.swift in Sources */,
+				829B74E01E960C4B00456D19 /* ImageCheckerTableViewCell.swift in Sources */,
+				8243459F1E95208B00305578 /* CheckerTableViewCell.swift in Sources */,
+				829B74E31E960C7700456D19 /* ImageRadioCheckerTableCell.swift in Sources */,
 				8243458C1E951EF600305578 /* ViewController.swift in Sources */,
 				8243458A1E951EF600305578 /* AppDelegate.swift in Sources */,
+				824345A11E95218200305578 /* SampleHeaderTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +345,7 @@
 				8243459A1E951EF600305578 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
